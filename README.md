@@ -132,6 +132,15 @@ Similarly to what you had to do in order to clone the repository, when you want 
     git remote add origin git@github_account_1.github.com:github_account_1/your_repository.git
 ```
 
+## How to commit & push
+Before being able to commit and push, you first have to configure the *user.name* and *user.email* relative to your repository: this way your local git client will know "who you are" when working with a specific repository:
+```console
+    git config user.name "github_account_1"
+    git config user.email "github_account_1@whatever.com"
+
+    ...choose the correct user and email according to the repository you want to work on from that PC.
+```
+
 ## Windows 10: “unable to start ssh-agent service, error :1058”
 The *OpenSSH Authentication Agent* might be not running by default, check this:
 https://stackoverflow.com/questions/52113738/starting-ssh-agent-on-windows-10-fails-unable-to-start-ssh-agent-service-erro
